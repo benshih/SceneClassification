@@ -6,9 +6,9 @@
 function [ filterBank, dictionary ] = getFilterBankAndDictionary( imPaths )
 
 % Number of visual words in dictionary: K is [100, 300].
-K = 100;
+K = 200;
 % Number of random pixels to take the response of: alpha is [50, 150].
-alpha = 50;
+alpha = 100;
 
 
 % Load each file by iterating through the cell array of strings containing
