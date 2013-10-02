@@ -91,6 +91,7 @@ classTrs = csTrs';
 
 %%
 
+save('vision.mat', 'filterBank', 'dictionary', 'featureTrs', 'classTrs');
 
 toc
 
