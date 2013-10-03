@@ -21,7 +21,7 @@ for k=1:len
     % i is actual class
     i = csTss(k);
     % j is predicted class
-    guessClass = guessImage_suppressOutput(['../images/', imTss{k}], filterBank, dictionary, featureTrs, classTrs);
+    guessClass = guessImage_suppressOutput(['images/', imTss{k}], filterBank, dictionary, featureTrs, classTrs);
     classIndex = strfind(mapping, guessClass);
     j = find(not(cellfun('isempty', classIndex)));
     % Increase the count for the number of instances of class i that were

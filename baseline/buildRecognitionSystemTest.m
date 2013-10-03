@@ -2,7 +2,7 @@
 
 load('traintest.mat','imTss');
 
-len = length(imTss);
+len = length(ibaselinemTss);
 
 for i=1:len
     close all;
