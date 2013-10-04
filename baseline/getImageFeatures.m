@@ -1,7 +1,6 @@
 % Benjamin Shih
 % 9/29/13
 % 2.1 Extracting Features
-% 
 
 % Input: 
 % wordMap is a H x W image containing the IDs of the visual words.

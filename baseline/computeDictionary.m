@@ -2,7 +2,6 @@
 % CV Fall 2013 - Provided Code
 % Does computation of the filter bank and dictionary, and saves
 % it in dictionary.mat
-%
 
 tic
 

@@ -1,5 +1,5 @@
 function guessedImage = guessImage_suppressOutput( imageName, filterBank, dictionary, featureTrs, classTrs )
-% Xinlei Chen
+% Xinlei Chen modified by Benjamin Shih
 % CV Fall 2013 - Provided Code
 % Given a path to a scene image, guess what scene it is
 % Input:

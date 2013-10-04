@@ -2,12 +2,7 @@
 % 10/1/13
 % 2.5 Quantitative Evaluation
 % Compare my predictions to the test images and their corresponding labels.
-% 
 
-% Input:
-% 
-
-% Output: 
 
 tic
 
@@ -29,6 +24,8 @@ for k=1:len
     C(i, j) = C(i,j) + 1;
 end
 
+% Determine the accuracy of the recognition system by looking at how many
+% testing images were properly classified (when i == j).
 acc = trace(C) / sum(C(:));
 
 disp('confusion matrix:')
