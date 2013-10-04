@@ -9,7 +9,6 @@
 % dictionarySize is the maximum visual word ID (i.e. number of visual
 % words).
 
-% Output: 
 
 function [ h ] = getImageFeaturesSPM( layerNum, wordMap, dictionarySize )
 
@@ -35,9 +34,7 @@ function [ h ] = getImageFeaturesSPM( layerNum, wordMap, dictionarySize )
         end
     end
     
-    % Temporarily assume that layerNum is always 3. Can simply renormalize
-    % because all cells have the same number of pixels and thus the weights
-    % are the same. 
+    % Given assumption: layerNum is always 3. 
     h(1601:1700) = (h(1:100) + h(101:200) + h(401:500) + h(501:600)) .* 0.25;
     h(1701:1800) = (h(201:300) + h(301:400) + h(601:700) + h(701:800)) .* 0.25;
     h(1801:1900) = (h(801:900) + h(901:1000) + h(1201:1300) + h(1301:1400)) .* 0.25;

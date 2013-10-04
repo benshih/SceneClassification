@@ -1,5 +1,5 @@
 function [filterBank] = createFilterBank()
-% Xinlei Chen
+% Xinlei Chen modified by Benjamin Shih
 % CV Fall 2013 - Provided Code
 % Code to get a reasonable filter bank
 

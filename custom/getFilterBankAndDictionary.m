@@ -21,7 +21,9 @@ for Ti = 1:length(imPaths)
     % Read and store the image.
     img = imread(imPaths{Ti});
     
-    % Identify the SURF features, take the strongest alpha points. 
+    % Identify the SURF features, take the strongest alpha points. If there
+    % aren't enough strong SURF points to fill the alpha vector, then
+    % buffer with randomly selected points. 
     imgDim = size(img);
     
     numPixel = numel(img(:,:,1));
@@ -33,8 +35,6 @@ for Ti = 1:length(imPaths)
     if not(isempty(pixelCoord))
         pixels(1:length(pixelCoord)) = pixelCoord(2,:).*imgDim(2) + pixelCoord(1,:);
     end
-
-    %Ti
 
     % Apply all of the filters to the alpha random pixels selected using
     % randperm. The alpha random pixels are selected in one color channel
